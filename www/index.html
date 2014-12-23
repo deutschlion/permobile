@@ -27,7 +27,7 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="js/ratchet.js"></script>
-    <!-- <script src="js/zepto.min.js"></script> -->
+    <script src="js/zepto.min.js"></script>
   </head>
   <body ontouchstart="">
 
@@ -41,14 +41,31 @@
               Застра<span style="color: #E14D41">хуй</span>
               <br><small>Всегда под рукой</small>
             </h1> 
-            <!--<br><small>Помощь в трудной ситуации</small> -->
-            <!-- <div class="loading">Приложение загружается..</div> -->
+            <div>
+              <h1>PhoneGap</h1>
+              <div id="deviceready" class="blink">
+                  <p class="event listening">Connecting to Device</p>
+                  <p class="event received">Device is Ready</p>
+              </div>
+            </div>
+            <hr>
+            <div>
+              <div id="log"></div>
+            </div>
+            <hr>
             <div class="button-block">
               <a href="signup.html" class="btn btn-block btn-outlined btn-primary"><i class="icon-user-follow"></i>&nbsp;Регистрация</a>
               <a href="two.html" data-transition="slide-in" class="btn btn-block btn-outlined btn-positive"><i class="icon-login"></i>&nbsp;Вход</a>
             </div>
       </div>
     </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+        checkConnection();
+    </script>
 
   </body>
 </html>
