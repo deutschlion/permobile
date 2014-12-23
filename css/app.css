@@ -1,0 +1,162 @@
+body {
+	font-family: 'OpenSansLightRegular', sans;
+}
+
+.content {
+	/* background: url('../img/ps_neutral.png'); */
+}
+
+.wrapper {
+	position: relative;
+	text-align: center;
+	margin: 40px auto;
+	width: 50%;
+}
+
+.first-screen {
+	text-align: center;
+	padding-top: 30px;
+	background: #3498db;
+}
+
+.first-screen h1>small {
+	font-family: 'OpenSansLightRegular', sans;
+	font-size: 18px;
+}
+
+.logo {
+	display: block;
+	margin: 15px auto;
+	width: 128px;
+	height: 128px;
+	background: url('../img/help.png');
+}
+
+.logo-header {
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	font-family: 'OpenSansSemiboldRegular', sans;
+}
+
+.loading {
+	font-size: 16px;
+	padding: 25px 8px;
+	display: block;
+}
+
+.no-border {
+	border: 0;
+}
+
+.button-block {
+	padding: 15px;
+	margin: 20px;
+	text-align: center;
+}
+
+.button-block .btn-block {
+	font-family: 'OpenSansRegular', sans;
+	width: 95%;
+	margin: 12px auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.golden-link {
+	color: #F0B700;
+}
+
+.search {
+	padding: 30px 12px 10px 12px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+.btn-disabled {
+	opacity: 0.7;
+}
+
+.info {
+	width: 95%;
+	margin: 15px auto;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.info .subheader {
+	text-align: center;
+}
+
+.info>ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.info>ul>li {
+	padding: 5px 0px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.info>ul>li>p {
+	font-size: 19px;
+	padding: 7px 0px;
+	margin-bottom: 0px;
+	font-family: 'OpenSansRegular', sans;
+	color: #373737;
+}
+
+.subinfo {
+	text-align: center;
+	font-family: 'OpenSansRegular', sans;
+	padding: 12px;
+}
+
+.search-title {
+	font-size: 20px; 
+	font-family: 'OpenSansRegular', sans;
+}
+
+.login {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 15px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+#help-bar {
+	height: 70px;
+	/* border-top: 0; */
+	bottom: 45px;
+	display: none;
+}
+
+#help-button {
+	display: block !important; 
+	width: 100% !important; 
+	padding: 15px 0 !important; 
+	margin-bottom: 10px !important; 
+	font-size: 18px !important;
+}
+
+hr {
+	border-top: 1px solid #ddd;
+	border-bottom: 0;
+	width: 95%;
+	margin: 0.5em auto;
+}
+
+h4 {
+	margin-top: 12px;
+}
+
+.list-info .table-view-cell {
+	padding: 11px 15px;
+}

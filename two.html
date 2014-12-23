@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Застрахуй - Главный экран</title>
+    <meta name="description" content="Приложение для быстрой связи с колл-центром при страховом случае">
+    <meta name="author" content="IT-Бюро SMPL">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Simple LIne Icons css -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="fonts/osans/osans.css">
+
+    <!-- Application styles -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/img/help.png">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+    <script src="js/zepto.min.js"></script>
+
+    <script>
+      setTimeout(function(){
+        $('#search-title').html('<i class="icon-pointer"></i>&nbsp;Мы вас нашли!');
+        $('#help-bar').show('800');
+      },5000);
+
+      Zepto(function($){
+        $("#compass").animate({
+          rotateZ: '720deg'
+        }, 5000, 'ease-in');
+      })
+    </script>
+
+  </head>
+  <body ontouchstart="">
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+
+    <header class="bar bar-nav">
+      <h1 class="title search-title" id="search-title"><i id="compass" class="icon-compass"></i>&nbsp;Ищем вас...</h1>
+    </header>
+
+    <!-- Block button in standard bar fixed above the footer -->
+    <div class="bar bar-standard bar-footer-secondary" id="help-bar">
+      <a href="#" class="btn btn-block btn-negative" id="help-button">
+        <i class="icon-support"></i>&nbsp;Нужна помощь
+      </a>
+    </div>
+
+    <nav class="bar bar-tab">
+      <a class="tab-item" href="help.html" data-transition="fade">
+        <span class="icon-umbrella"></span>
+        <span class="tab-label">Подсказки</span>
+      </a>
+      <a class="tab-item" href="#profile">
+        <span class="icon-user"></span>
+        <span class="tab-label">Профиль</span>
+      </a>
+      <!-- <a class="tab-item" href="#">
+        <span class="icon-reload"></span>
+        <span class="tab-label">Обновить</span>
+      </a> -->
+    </nav>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+
+      <ul class="table-view list-info">
+        <li class="table-view-cell">После определения местоположения, появится кнопка вызова колл-центра</li>
+        <li class="table-view-cell">Обычно поиск занимает от 30 секунд до нескольких минут</li>
+        <li class="table-view-cell">Через 3 минуты вам перезвонит наш оператор и уточнит все детали события</li>
+      </ul>
+    
+      <div id="profile" class="modal">
+        <header class="bar bar-nav">
+          <a class="icon icon-close pull-right" href="#profile"></a>
+          <h1 class="title">Профиль</h1>
+        </header>
+        <div class="content">
+          <div class="info">
+            <ul>
+              <li>
+                <i class="icon-user"></i>&nbsp;<b>Владелец полиса</b>
+                <p>Иванов Иван Иванович</p>
+              </li>
+              <li>
+                <i class="icon-doc"></i>&nbsp;<b>Полис</b>
+                <p>BB-1234-56-890</p>
+              </li>
+              <li>
+                <i class="icon-speedometer"></i>&nbsp;<b>Номер авто</b>
+                <p>Е&nbsp;777&nbsp;КХ<sup>197</sup></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- modal end -->
+
+    </div>
+
+  </body>
+</html>
